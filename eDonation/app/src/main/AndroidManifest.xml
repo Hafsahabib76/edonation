@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.se17.edonation">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SubmittedActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateUserDetailsActivity" />
+        <activity android:name=".UserAcountActivity.ChangePasswordActivity" />
+        <activity android:name=".UserAcountActivity.ResetPasswordActivity" />
+        <activity android:name=".CampaignsingleActivity" />
+        <activity
+            android:name=".MycampaignsActivity"
+            android:label="My Campaigns" />
+        <activity
+            android:name=".ChartiysingleActivity"
+            android:label="Donate now" />
+        <activity
+            android:name=".StartCampaignActivity"
+            android:label="Create Campaign"
+            android:parentActivityName=".FundraiseActivity" />
+        <activity
+            android:name=".DonateActivity"
+            android:label="Donate" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".FundraiseActivity"
+            android:label="Fundraise" />
+        <activity android:name=".UserAcountActivity.LoginActivity" />
+        <activity android:name=".UserAcountActivity.RegisterActivity" />
+        <activity
+            android:name=".MoneyPaymentActivity"
+            android:label="Payment"
+            android:parentActivityName=".DonateMoneyActivity" />
+        <activity
+            android:name=".DonateMoneyActivity"
+            android:label="Donate Money"
+            android:parentActivityName=".ChartiysingleActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Charity Organizations" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

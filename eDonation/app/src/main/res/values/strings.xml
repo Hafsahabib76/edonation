@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">edonation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close </string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your Email and Password or get Register or check Internet Connection</string>
+
+
+    <string name="about"><center> Write some details about your campaign. Example: Our team starting this campaign
+        aim to raise funds to build a Hand Washing Station in three of the schools...</center></string>
+    <string name="invalid_name">Please Enter Valid Name</string>
+    <string name="invalid_mobile">Please Enter Valid Mobile Number</string>
+    <string name="invalid_amount">Empty Field</string>
+    <string name="invalid_payment">Select Payment Instrument</string>
+    <string name="invalid_code">Please Enter Valid CVV/CVV2</string>
+    <string name="invalid_cardNumber">Please Enter Valid Card Number</string>
+    <string name="empty_field">Empty Field</string>
+
+    <string-array name="city">
+        <item>--Select City--</item>
+        <item>Karachi</item>
+        <item>Hyderabad</item>
+        <item>Lahore</item>
+        <item>Islamabad</item>
+        <item>Faisalabad</item>
+        <item>Multan</item>
+        <item>Peshawar</item>
+        <item>Quetta</item>
+        <item>Rawalpindi</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>--Select Category--</item>
+        <item>Community</item>
+        <item>Creative Projects</item>
+        <item>Disaster Relief</item>
+        <item>Special Events</item>
+        <item>Kids and Family</item>
+        <item>Medical and Health</item>
+        <item>Non-Profit and Charity</item>
+        <item>Pets and Animals</item>
+        <item>Religious Organizations</item>
+        <item>School and Education</item>
+    </string-array>
+
+    <string-array name="donationFor">
+        <item>Rasahan</item>
+        <item>Education</item>
+        <item>Marriage</item>
+        <item>Masjid Construction</item>
+        <item>Flood Victim</item>
+        <item>Corona Effecties</item>
+        <item>Food</item>
+        <item>Zakkat</item>
+        <item>Sadqah</item>
+        <item>Heat Stroke</item>
+    </string-array>
+
+    <string-array name="Paymentinstrument">
+        <item>--Select--</item>
+        <item>Payment Card</item>
+    </string-array>
+
+    <string-array name="cardtype">
+        <item>--Select--</item>
+        <item>Visa Card</item>
+        <item>Master Card</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>--Month--</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>--Year--</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+        <item>2036</item>
+        <item>2037</item>
+        <item>2038</item>
+        <item>2039</item>
+        <item>2040</item>
+    </string-array>
+
+    <string-array name="agree">
+        <item>I agree to edonation Terms of Use</item>
+    </string-array>
+
+
+</resources>
+

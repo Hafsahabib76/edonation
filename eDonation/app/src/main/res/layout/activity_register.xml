@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@mipmap/edonation_namelogo" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_round"
+                android:fontFamily="sans-serif"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="12dp" />
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_round"
+                android:fontFamily="sans-serif"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="12dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_round"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp" />
+
+            <Button
+                android:id="@+id/Registerbtn"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_corners"
+                android:fontFamily="sans-serif-black"
+                android:onClick="Login"
+                android:text="Register"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text=" ━━━━━━━━ OR  ━━━━━━━━"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Already have an account?"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/IdLoginbtn"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/outline_corners"
+                android:fontFamily="sans-serif-black"
+                android:onClick="Login"
+                android:text="Login"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".DonateMoneyActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Payment instrument"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/paymentinsSpinner"
+            android:entries="@array/Paymentinstrument"
+            android:background="@drawable/spinner_border"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Card Type"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardtypeSpinner"
+            android:entries="@array/cardtype"
+            android:background="@drawable/spinner_border"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Card Number"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:hint="e.g: 12111111111111"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Card Expiration"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthSpinner"
+                android:entries="@array/month"
+                android:background="@drawable/spinner_border"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearSpinner"
+                android:entries="@array/year"
+                android:background="@drawable/spinner_border"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="Verification code"
+            android:textColor="@color/colorTextView"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/verifcationCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:hint="CVV/CVV2"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/PayBtn"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pay"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-black"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

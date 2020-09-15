@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartCampaignActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:fitsSystemWindows="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Title"
+                android:textColor="@color/colorTextView"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="10dip"
+                android:hint="Title your Campaign"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="City"
+                android:textColor="@color/colorTextView"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/citySpinner"
+                android:entries="@array/city"
+                android:background="@drawable/spinner_border"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Category"
+                android:textColor="@color/colorTextView"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/categorySpinner"
+                android:entries="@array/category"
+                android:background="@drawable/spinner_border"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="What are you fundraising for?"
+                android:textColor="@color/colorTextView"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/aboutCampaign"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:hint="@string/about"
+                android:gravity="top|left"
+                android:minLines="3"
+                android:maxLines="10"
+                android:layout_marginTop="5dip"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Add an image"
+                android:textColor="@color/colorTextView"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/addimageBtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_add_box"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dip"/>
+
+            <ImageView
+                android:id="@+id/addimageIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:layout_marginTop="5dip" />
+
+            <Button
+                android:id="@+id/startCampaignBtn"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="Start Campaign"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corners"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-black"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

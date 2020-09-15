@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1056285082612",
+    "firebase_url": "https://edonation-af452.firebaseio.com",
+    "project_id": "edonation-af452",
+    "storage_bucket": "edonation-af452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056285082612:android:a4452ad37e107c5c13afa1",
+        "android_client_info": {
+          "package_name": "com.se17.edonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056285082612-2pi1un3uemdot40lie04i71p2h66ln05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.se17.edonation",
+            "certificate_hash": "ea37eff20407e0e670f4c7b9b53448913e47a35d"
+          }
+        },
+        {
+          "client_id": "1056285082612-33pbq83dnur143q99q2r2o9dhi9qeukt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA_19Y8yCJ-zmfTvh5gCYC6E9xll-FRWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056285082612-33pbq83dnur143q99q2r2o9dhi9qeukt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground"
+    tools:context=".CampaignsingleActivity">
+
+    <ImageView
+        android:id="@+id/singleCampaignImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/supportus"
+        />
+
+    <TextView
+        android:id="@+id/singleCampaignTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_below="@+id/singleCampaignImage"
+        android:textSize="22sp"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextView"
+        />
+
+        <TextView
+            android:id="@+id/singleCampaignCateogry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="category"
+            android:layout_below="@id/singleCampaignTitle"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_view_list"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/singleCampaignCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="city"
+            android:layout_below="@+id/singleCampaignCateogry"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_location"
+            android:layout_marginBottom="4dp"
+            />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@id/singleCampaignCity">
+
+        <TextView
+            android:id="@+id/singleCampaignAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextView"
+            android:layout_marginBottom="55dp"
+            />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/singleDonteNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Donate Now"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        />
+
+</RelativeLayout>
